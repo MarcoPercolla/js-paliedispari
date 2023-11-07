@@ -32,7 +32,11 @@ if (result == "true") {
 };
 // dichiaro le variabili da generare e prendere dai prompt, inserisco in idex messaggi successivi ai prompt per la validazione tramite if 
 const number = Number(prompt("inserisci un numero da 1 a 5"));
+document.getElementById("myHand").innerHTML = `hai puntato ${number}`;
+
+
 const choice = prompt("scegli tra pari o dispari, il computer sara il tuo avversario e scegliera l'opposto");
+document.getElementById("scelta").innerHTML = `hai scelto ${choice}`;
 
 
 // numero randomico e somma con numero input
@@ -73,5 +77,7 @@ console.log(choice);
 if (choice !== "pari" && choice !== "dispari") {
     document.getElementById("dareResult").innerHTML = `il valore  ${choice} non è valido`;
 };
+
+
 
 // pagina pronta con validazioni che non bloccano la pagina ma che successivamente possono essere usati per bloccare input
